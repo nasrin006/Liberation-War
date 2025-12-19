@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+  <header>
+    <!-- navber-start -->
+    <nav>
+      <div class="navbar bg-base-100 shadow-sm">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 " fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="-1" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+              <li><a href="./index.html" class="text-xl font-bold">Home</a></li>
+              <li><a href="./Bir Sreshtho.html" class="text-xl font-bold">Bir Sreshtho</a></li>
+              <li><a href="./Timeline.html" class="text-xl font-bold">Timelime</a></li>
+              <li><a href="./Media.html" class="text-xl font-bold">Media</a></li>
+              <li><a href="./contact.html" class="text-xl font-bold">Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl">History of 1971</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a href="./index.html" class="text-xl font-bold">Home</a></li>
+            <li><a href="./Bir Sreshtho.html" class="text-xl font-bold">Bir Sreshtho</a></li>
+            <li><a href="./Timeline.html" class="text-xl font-bold">Timelime</a></li>
+            <li><a href="./Media.html" class="text-xl font-bold">Media</a></li>
+            <li><a href="./contact.html" class="text-xl font-bold">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <label class="input">
+            <input type="search" class="grow" placeholder="Search" />
+            <svg class="h-[1em]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none" stroke="currentColor">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.3-4.3"></path>
+              </g>
+            </svg>
+
+          </label>
+
+        </div>
+      </div>
+
+    </nav>
+    <!-- navber-end -->
+  </header>
+
+
+  <main>
+    <section>
+    <div class="flex flex-col gap-3 justify-center items-center py-12">
+      <h1 class="text-4xl font-bold">Contact & Guestbook</h1>
+      <!-- <p class="text-xl">The bravest heroes of the Liberation War 1971</p> -->
+      <div class="h-[5px] w-[150px] bg-black rounded-2xl"></div>
+    </div>
+    </section>
+
+    <section class="container mx-auto px-2 md:px-4 lg:px-6">
+
+      <div class="w-full bg-slate-200 rounded-lg p-12">
+        <div class="">
+          <h1 class="text-3xl font-bold text-center">Share Your Thoughts</h1>
+          <form action="" id="contactForm" class="grid grid-cols-2 gap-4 space-y-4">
+            <fieldset class="fieldset col-span-2">
+              <legend class="fieldset-legend">Name</legend>
+              <input type="text" class="input w-full" id="name" placeholder="Type here" />
+
+            </fieldset>
+            <fieldset class="fieldset col-span-2">
+              <legend class="fieldset-legend">Eamil</legend>
+              <input type="text" class="input w-full px-6" id="email" placeholder="example@mail.com" />
+
+            </fieldset>
+
+
+            <fieldset class="fieldset col-span-2">
+              <legend class="fieldset-legend">Message</legend>
+              <textarea class="textarea w-full" id="message" placeholder="Bio"></textarea>
+
+            </fieldset>
+            <button class="btn btn-active w-full col-span-2 bg-black text-white">submit</button>
+
+          </form>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section>
+    <div class="flex flex-col gap-3 justify-center items-center py-12">
+      <h1 class="text-4xl font-bold">Visitor Counter</h1>
+      <!-- <p class="text-xl">The bravest heroes of the Liberation War 1971</p> -->
+      <div class="h-[5px] w-[150px] bg-black rounded-2xl"></div>
+    </div>
+    </section>
+
+    </section>
+    <section class="container mx-auto px-2 md:px-4 lg:px-6">
+    <div class="stats shadow">
+  <div class="center">
+    <div class="stat-title">Total Page Views</div>
+    <div class="stat-value">89,400</div>
+    <div class="stat-desc">21% more than last month</div>
+  </div>
+</div>
+</section>
+
+    <!-- footer-section -->
+    <footer class="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10">
+      <nav class="grid grid-flow-col gap-4">
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav>
+      <nav>
+        <div class="grid grid-flow-col gap-4">
+          <a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+              <path
+                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+              </path>
+            </svg>
+          </a>
+          <a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+              <path
+                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+              </path>
+            </svg>
+          </a>
+          <a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+              <path
+                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+              </path>
+            </svg>
+          </a>
+        </div>
+      </nav>
+      <aside>
+        <h1 id="dateTime">Date Is Loading...........</h1>
+        <p>Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
+      </aside>
+    </footer>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Guestbook</title>
+  <!-- Tailwind and DaisyUI CDN -->
+  <link href="cdn.jsdelivr.net" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-base-200 min-h-screen">
+
+  <!-- a. Page Title Section -->
+  <header class="py-12 bg-gradient-to-r from-blue-700 to-blue-500 text-white text-center shadow-lg">
+    <h1 class="text-4xl font-black uppercase tracking-tighter">Contact & Guestbook</h1>
+    <p class="mt-2 text-blue-100 italic">Honoring our heroes, sharing our respect.</p>
+  </header>
+
+  <main class="container mx-auto px-4 py-12">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+
+      <!-- b. & d. "Share Your Thoughts" Form with Validation -->
+      <section class="card bg-base-100 shadow-2xl p-8 border-t-4 border-blue-600">
+        <h2 class="text-2xl font-bold mb-6 flex items-center gap-2">
+          <span class="text-blue-600">✉️</span> Share Your Thoughts
+        </h2>
+
+        <form id="guestbookForm" class="space-y-5">
+          <!-- Name Field -->
+          <div class="form-control">
+            <label class="label"><span class="label-text font-semibold">Full Name</span></label>
+            <input type="text" id="userName" placeholder="Enter your name"
+              class="input input-bordered focus:border-blue-500 w-full" />
+            <p id="nameError" class="text-error text-xs mt-1 hidden">⚠️ Name cannot be empty!</p>
+          </div>
+
+          <!-- Email Field -->
+          <div class="form-control">
+            <label class="label"><span class="label-text font-semibold">Email Address</span></label>
+            <input type="text" id="userEmail" placeholder="example@mail.com"
+              class="input input-bordered focus:border-blue-500 w-full" />
+            <p id="emailError" class="text-error text-xs mt-1 hidden">⚠️ Please enter a valid email containing '@'</p>
+          </div>
+
+          <!-- Message Field -->
+          <div class="form-control">
+            <label class="label"><span class="label-text font-semibold">Your Message</span></label>
+            <textarea id="userMsg" class="textarea textarea-bordered h-32 focus:border-blue-500"
+              placeholder="Type your tribute or message here..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-full bg-blue-600 hover:bg-blue-800 border-none text-white">
+            Submit Thought
+          </button>
+        </form>
+      </section>
+
+      <!-- c. Visitor Counter Section -->
+    <div class="stats shadow">
+  <div class="stat">
+    <div class="stat-title">Total Page Views</div>
+    <div class="stat-value">89,400</div>
+    <div class="stat-desc">21% more than last month</div>
+  </div>
+</div>
+
+        <!-- Info Card -->
+        <div class="card bg-neutral text-neutral-content shadow-xl">
+          <div class="card-body">
+            <h2 class="card-title text-blue-400 underline">Quick Information</h2>
+            <div class="space-y-2 mt-2">
+              <p class="flex items-center gap-2">📍 <span>Liberation War Museum, Dhaka</span></p>
+              <p class="flex items-center gap-2">📧 <span>tribute@birsreshtho.gov.bd</span></p>
+              <p class="flex items-center gap-2">📞 <span>+880 1XXX-XXXXXX</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- JavaScript for Logic -->
+  <script>
+    // --- c. Visitor Counter Mockup ---
+    function runVisitorCounter() {
+      // Get value from local storage or set default
+      let count = localStorage.getItem('visit_count');
+
+      if (!count) {
+        count = 5420; // Starting mockup value
+      } else {
+        count = parseInt(count) + 1;
+      }
+
+      // Save and Display
+      localStorage.setItem('visit_count', count);
+      document.getElementById('countDisplay').innerText = count.toLocaleString();
+    }
+
+    // --- d. Form Validation Logic ---
+    const form = document.getElementById('guestbookForm');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault(); // Stop page refresh
+
+      const nameValue = document.getElementById('userName').value.trim();
+      const emailValue = document.getElementById('userEmail').value.trim();
+      const nameErr = document.getElementById('nameError');
+      const emailErr = document.getElementById('emailError');
+
+      let isValid = true;
+
+      // Name validation
+      if (nameValue === "") {
+        nameErr.classList.remove('hidden');
+        isValid = false;
+      } else {
+        nameErr.classList.add('hidden');
+      }
+
+      // Email validation (must contain '@')
+      if (!emailValue.includes('@')) {
+        emailErr.classList.remove('hidden');
+        isValid = false;
+      } else {
+        emailErr.classList.add('hidden');
+      }
+
+      // Final check
+      if (isValid) {
+        alert("Success! Thank you " + nameValue + " for sharing your thoughts.");
+        form.reset(); // Clear form
+      }
+    });
+
+    // Initialize Counter on Load
+    window.onload = runVisitorCounter;
+  </script>
+
+</body>
+
+</html>
