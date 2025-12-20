@@ -10,6 +10,8 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js"> defer</script>
 </head>
 
 <body>
@@ -75,7 +77,7 @@
 
     <section class="container mx-auto px-2 md:px-4 lg:px-6">
 
-      <div class="w-full bg-slate-200 rounded-lg p-12">
+      <div class="min-w-[300px] bg-slate-200 rounded-lg p-12">
         <div class="">
           <h1 class="text-3xl font-bold text-center">Share Your Thoughts</h1>
           <form action="" id="contactForm" class="grid grid-cols-2 gap-4 space-y-4">
@@ -112,25 +114,28 @@
     </section>
 
     </section>
-    <section class="container mx-auto px-2 md:px-4 lg:px-6">
-    <div class="stats shadow">
-  <div class="center">
-    <div class="stat-title">Total Page Views</div>
-    <div class="stat-value">89,400</div>
-    <div class="stat-desc">21% more than last month</div>
-  </div>
-</div>
+    <section class="container mx-auto px-2 md:px-4 lg:px-6 py-10">
+  <div class="flex justify-center">
+        <div class="card w-150 bg-base-100 card-xl shadow-sm">
+          <div class="card-body">
+            <h2 class="card-title">Xlarge Card</h2>
+            <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+            <div class="justify-end card-actions">
+              <button class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
 </section>
+  <!-- footer-section -->
 
-    <!-- footer-section -->
-    <footer class="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10">
-      <nav class="grid grid-flow-col gap-4">
-        <a class="link link-hover">About us</a>
-        <a class="link link-hover">Contact</a>
-        <a class="link link-hover">Jobs</a>
-        <a class="link link-hover">Press kit</a>
-      </nav>
+    <footer class="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
+      <aside>
+        <h1 class="text-5xl font-bold">Joy Bangla</h1>
+        <h1 id="dateTime">Date Is Loading...........</h1>
+      </aside>
       <nav>
+        <h6 class="footer-title">Social</h6>
         <div class="grid grid-flow-col gap-4">
           <a>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
@@ -155,154 +160,11 @@
           </a>
         </div>
       </nav>
-      <aside>
-        <h1 id="dateTime">Date Is Loading...........</h1>
-        <p>Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
-      </aside>
     </footer>
-</body>
 
-</html>
-<!DOCTYPE html>
-<html lang="en" data-theme="light">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact & Guestbook</title>
-  <!-- Tailwind and DaisyUI CDN -->
-  <link href="cdn.jsdelivr.net" rel="stylesheet" type="text/css" />
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
-<body class="bg-base-200 min-h-screen">
-
-  <!-- a. Page Title Section -->
-  <header class="py-12 bg-gradient-to-r from-blue-700 to-blue-500 text-white text-center shadow-lg">
-    <h1 class="text-4xl font-black uppercase tracking-tighter">Contact & Guestbook</h1>
-    <p class="mt-2 text-blue-100 italic">Honoring our heroes, sharing our respect.</p>
-  </header>
-
-  <main class="container mx-auto px-4 py-12">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
-
-      <!-- b. & d. "Share Your Thoughts" Form with Validation -->
-      <section class="card bg-base-100 shadow-2xl p-8 border-t-4 border-blue-600">
-        <h2 class="text-2xl font-bold mb-6 flex items-center gap-2">
-          <span class="text-blue-600">✉️</span> Share Your Thoughts
-        </h2>
-
-        <form id="guestbookForm" class="space-y-5">
-          <!-- Name Field -->
-          <div class="form-control">
-            <label class="label"><span class="label-text font-semibold">Full Name</span></label>
-            <input type="text" id="userName" placeholder="Enter your name"
-              class="input input-bordered focus:border-blue-500 w-full" />
-            <p id="nameError" class="text-error text-xs mt-1 hidden">⚠️ Name cannot be empty!</p>
-          </div>
-
-          <!-- Email Field -->
-          <div class="form-control">
-            <label class="label"><span class="label-text font-semibold">Email Address</span></label>
-            <input type="text" id="userEmail" placeholder="example@mail.com"
-              class="input input-bordered focus:border-blue-500 w-full" />
-            <p id="emailError" class="text-error text-xs mt-1 hidden">⚠️ Please enter a valid email containing '@'</p>
-          </div>
-
-          <!-- Message Field -->
-          <div class="form-control">
-            <label class="label"><span class="label-text font-semibold">Your Message</span></label>
-            <textarea id="userMsg" class="textarea textarea-bordered h-32 focus:border-blue-500"
-              placeholder="Type your tribute or message here..."></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-primary w-full bg-blue-600 hover:bg-blue-800 border-none text-white">
-            Submit Thought
-          </button>
-        </form>
-      </section>
-
-      <!-- c. Visitor Counter Section -->
-    <div class="stats shadow">
-  <div class="stat">
-    <div class="stat-title">Total Page Views</div>
-    <div class="stat-value">89,400</div>
-    <div class="stat-desc">21% more than last month</div>
-  </div>
-</div>
-
-        <!-- Info Card -->
-        <div class="card bg-neutral text-neutral-content shadow-xl">
-          <div class="card-body">
-            <h2 class="card-title text-blue-400 underline">Quick Information</h2>
-            <div class="space-y-2 mt-2">
-              <p class="flex items-center gap-2">📍 <span>Liberation War Museum, Dhaka</span></p>
-              <p class="flex items-center gap-2">📧 <span>tribute@birsreshtho.gov.bd</span></p>
-              <p class="flex items-center gap-2">📞 <span>+880 1XXX-XXXXXX</span></p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
   </main>
 
-  <!-- JavaScript for Logic -->
-  <script>
-    // --- c. Visitor Counter Mockup ---
-    function runVisitorCounter() {
-      // Get value from local storage or set default
-      let count = localStorage.getItem('visit_count');
-
-      if (!count) {
-        count = 5420; // Starting mockup value
-      } else {
-        count = parseInt(count) + 1;
-      }
-
-      // Save and Display
-      localStorage.setItem('visit_count', count);
-      document.getElementById('countDisplay').innerText = count.toLocaleString();
-    }
-
-    // --- d. Form Validation Logic ---
-    const form = document.getElementById('guestbookForm');
-
-    form.addEventListener('submit', function (e) {
-      e.preventDefault(); // Stop page refresh
-
-      const nameValue = document.getElementById('userName').value.trim();
-      const emailValue = document.getElementById('userEmail').value.trim();
-      const nameErr = document.getElementById('nameError');
-      const emailErr = document.getElementById('emailError');
-
-      let isValid = true;
-
-      // Name validation
-      if (nameValue === "") {
-        nameErr.classList.remove('hidden');
-        isValid = false;
-      } else {
-        nameErr.classList.add('hidden');
-      }
-
-      // Email validation (must contain '@')
-      if (!emailValue.includes('@')) {
-        emailErr.classList.remove('hidden');
-        isValid = false;
-      } else {
-        emailErr.classList.add('hidden');
-      }
-
-      // Final check
-      if (isValid) {
-        alert("Success! Thank you " + nameValue + " for sharing your thoughts.");
-        form.reset(); // Clear form
-      }
-    });
-
-    // Initialize Counter on Load
-    window.onload = runVisitorCounter;
-  </script>
+   
 
 </body>
 
