@@ -1,12 +1,12 @@
 const contactForm = document.getElementById("contactForm");
-console.log(contactForm)
+console.log(contactForm);
 
 if (contactForm) {
-  document.addEventListener("submit", (e) => {
+  contactForm.addEventListener("submit", (e) => {
     e.preventDefault();
+
     const inputName = document.getElementById("name").value.trim();
     const email = document.getElementById("email").value.trim();
-    const phone = document.getElementById("phone").value.trim();
     const message = document.getElementById("message").value.trim();
 
     let isValid = true;
@@ -14,31 +14,23 @@ if (contactForm) {
 
     if (inputName === "") {
       isValid = false;
-      errorMessage = errorMessage + "Name is required.\n";
+      errorMessage += "Name is required.\n";
     }
 
     if (email === "") {
       isValid = false;
-      errorMessage = errorMessage + "Email Is Required";
-    }
-
-    if (email) {
+      errorMessage += "Email is required.\n";
+    } else {
       const pattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-      const validPattern = pattern.test(email);
-      if (!validPattern) {
-        errorMessage += "Please enter a valid email address.\n";
+      if (!pattern.test(email)) {
         isValid = false;
+        errorMessage += "Please enter a valid email address.\n";
       }
     }
 
-    if (phone === "") {
-      errorMessage += "Phone number is required.\n";
-      isValid = false;
-    }
-
     if (message === "") {
-      errorMessage += "Message cannot be empty.\n";
       isValid = false;
+      errorMessage += "Message cannot be empty.\n";
     }
 
     if (isValid) {
@@ -49,6 +41,7 @@ if (contactForm) {
     }
   });
 }
+
 
 const updateDateTime = () => {
   const timeContainer = document.getElementById("dateTime"); 
