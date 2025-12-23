@@ -1,7 +1,7 @@
-const contactForm = document.getElementById("contactForm");
-console.log(contactForm);
+document.addEventListener("DOMContentLoaded", () => {
+  const contactForm = document.getElementById("contactForm");
+  console.log(contactForm);
 
-if (contactForm) {
   contactForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
@@ -9,38 +9,34 @@ if (contactForm) {
     const email = document.getElementById("email").value.trim();
     const message = document.getElementById("message").value.trim();
 
-    let isValid = true;
     let errorMessage = "";
 
     if (inputName === "") {
-      isValid = false;
-      errorMessage += "Name is required.\n";
+      errorMessage += "Name is required\n";
     }
 
     if (email === "") {
-      isValid = false;
-      errorMessage += "Email is required.\n";
+      errorMessage += "Email is required\n";
     } else {
-      const pattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+      const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!pattern.test(email)) {
-        isValid = false;
-        errorMessage += "Please enter a valid email address.\n";
+        errorMessage += "Invalid email\n";
       }
     }
 
     if (message === "") {
-      isValid = false;
-      errorMessage += "Message cannot be empty.\n";
+      errorMessage += "Message is required\n";
     }
 
-    if (isValid) {
+    if (errorMessage === "") {
       alert("Form Submitted Successfully!");
       contactForm.reset();
     } else {
       alert(errorMessage);
     }
   });
-}
+});
+
 
 
 const updateDateTime = () => {
